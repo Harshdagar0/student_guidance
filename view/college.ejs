@@ -1,0 +1,17 @@
+<% layout('boilerplate') -%>
+
+<body>
+    <div class="container">
+        <div class="row ">
+            <h1><%= object.sName %>/</h1>
+            <h3><%= object.fName %></h3>
+            <img src="<%= object.url %>">
+        </div>
+        <div class="row mt-5">
+            <p><span style="font-weight: 400; color: red;">Cource offer by<%= object.sName %>: </span> <%= object.courses %></p>
+            <p><span style="font-weight: 400; color: red;">Address : </span> <%= object.location %></p>
+            <p><span style="font-weight: 400; color: red;">Site  : </span> <a class="" href="<%= object.site %>"><%= object.site %></a></p>
+        </div>
+    </div>
+
+</body>

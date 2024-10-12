@@ -20,12 +20,12 @@
     <h1 class="text-center my-5">All Courses of IP University</h1>
     <div class="row">
         <% for(allCourses of allCourses){ %>
-            <div class="col">
-                <div class="card courseCard" >
+            <div class="col col-lg-3 col-sm-6  ">
+                <div class="card courseCard my-3" >
                     <div class="card-body">
                         <h5 class="card-title"><%= allCourses.sName %></h5>
                         <p class="card-text"><%= allCourses.fName %></p>
-                        <a href="/home/<%= allCourses.sName  %>" class="btn btn-primary">More about Courses</a>
+                        <a href="/home/<%= allCourses.sName  %>" class="btn about" >More about Courses</a>
                     </div>
                 </div>
             </div>

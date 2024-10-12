@@ -1,5 +1,7 @@
 .courseCard{
-    background-color: aqua;
+    background-color: black;
+    color: white;
+    border-radius: 1.3rem;
 }
 .courseCard:hover{
     box-shadow: 1px 1px 10px black;
@@ -14,8 +16,11 @@
     text-decoration: none;
 
 }
-.bg{
-    background-image: url('images/download.png');
+body{
+    background-image: url('/images/download.png');
+    /* position: relative; */
+    background-repeat: repeat;
+    background-size:contain;
 }
 .social{
     color: black;
@@ -27,5 +32,23 @@
     font-size: 1rem;
     margin-right: 2rem;
     text-decoration: none;
+}
+.about{
+background-color: white;
+ color: black; 
+}
+.about:hover{
+ box-shadow: 1px 1px 10px white;
+
+}
+
+
+@media screen and (max-width :547px) {
+    
+.row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}     
 }
 

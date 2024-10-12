@@ -27,7 +27,7 @@ app.get("/home",(req,res)=>{
 });
 
 app.get("/home/:id",(req,res)=>{
-   let course = (req.params.id);
+   let course = req.params.id;
    const object = allCourses.find(obj => obj.sName === course);    
    res.render("course.ejs",{object});
 
@@ -36,10 +36,22 @@ app.get("/home/:id",(req,res)=>{
 app.get("/aboutCollege",(req,res)=>{
      res.render("aboutCollege.ejs",{data});
 });
+
+app.get("/aboutCollege/:id",(req,res)=>{
+   let clg = req.params.id;
+     
+    const object = data.find(obj => obj.sName === clg);  
+   res.render("college.ejs",{object});
+
+})
+
 app.get("/aboutUs",(req,res)=>{
     res.render("aboutUs.ejs");
 });
 
+app.get("/contact",(req,res)=>{
+    res.render("contact.ejs");
+});
 
 app.listen(8080,()=>{
     console.log("hogya");
