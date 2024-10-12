@@ -1,0 +1,36 @@
+<% layout('boilerplate') -%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="CSS/ejs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <div class="container">
+        <h1><%= object.sName %>/</h1>
+        <h3><%= object.fName %></h3>
+        <div class="row">
+            <div class="col">
+                <p><%= object.p %></p>
+                <p class="fs-5"><span style="font-weight: 400; color: red;">Duration :</span> <%= object.duration %></p>
+                <p class="fs-5"><span style="font-weight: 400; color: red;">Eligibility :</span> <%= object.eligibility %></p>
+                <p class="fs-5"><span style="font-weight: 400; color: red;">Fess :</span> <%= object.Fess %></p>
+                <p class="fs-5"><span style="font-weight: 400; color: red;">College name who offer <%= object.sName %>  :</span> <%= object.College %></p>
+            </div>
+        </div>
+    </div>
+   
+
+
+</body>
+</html>
